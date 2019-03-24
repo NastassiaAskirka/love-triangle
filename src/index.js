@@ -1,7 +1,10 @@
-/**
- * @param preferences - an array of integers. Indices of people, whom they love
- * @returns number of love triangles
- */
-module.exports = function getLoveTrianglesCount(preferences = []) {
-  // your implementation
+
+module.exports = function getLoveTrianglesCount ( array ) {
+  let count = -1;
+    for ( i = 0; i < array.length; i++ ) {
+        i === array[array[array[i]]];
+        if ( count < i ) {
+            count = i;
+        }
+    } return ( count + 1 )/3;
 };
